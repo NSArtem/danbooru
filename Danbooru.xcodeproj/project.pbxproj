@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC186E7427A49CCC009E65DF /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC186E7327A49CCC009E65DF /* GalleryViewModel.swift */; };
 		ACD8BAB427A42CE30015571E /* DanbooruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BAB327A42CE30015571E /* DanbooruApp.swift */; };
-		ACD8BAB627A42CE30015571E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BAB527A42CE30015571E /* ContentView.swift */; };
+		ACD8BAB627A42CE30015571E /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BAB527A42CE30015571E /* GalleryView.swift */; };
 		ACD8BAB827A42CE80015571E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD8BAB727A42CE80015571E /* Assets.xcassets */; };
 		ACD8BABB27A42CE80015571E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD8BABA27A42CE80015571E /* Preview Assets.xcassets */; };
 		ACD8BAC527A42CE80015571E /* DanbooruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BAC427A42CE80015571E /* DanbooruTests.swift */; };
 		ACD8BACF27A42CE80015571E /* DanbooruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BACE27A42CE80015571E /* DanbooruUITests.swift */; };
 		ACD8BAD127A42CE80015571E /* DanbooruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BAD027A42CE80015571E /* DanbooruUITestsLaunchTests.swift */; };
+		ACD8BADE27A42CFB0015571E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BADD27A42CFB0015571E /* Networking.swift */; };
+		ACD8BAE027A48CBC0015571E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BADF27A48CBC0015571E /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC186E7327A49CCC009E65DF /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 		ACD8BAB027A42CE30015571E /* Danbooru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Danbooru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD8BAB327A42CE30015571E /* DanbooruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanbooruApp.swift; sourceTree = "<group>"; };
-		ACD8BAB527A42CE30015571E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACD8BAB527A42CE30015571E /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		ACD8BAB727A42CE80015571E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD8BABA27A42CE80015571E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACD8BAC027A42CE80015571E /* DanbooruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanbooruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,8 @@
 		ACD8BACA27A42CE80015571E /* DanbooruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanbooruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD8BACE27A42CE80015571E /* DanbooruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanbooruUITests.swift; sourceTree = "<group>"; };
 		ACD8BAD027A42CE80015571E /* DanbooruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanbooruUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACD8BADD27A42CFB0015571E /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		ACD8BADF27A48CBC0015571E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				ACD8BAB327A42CE30015571E /* DanbooruApp.swift */,
-				ACD8BAB527A42CE30015571E /* ContentView.swift */,
+				ACD8BAB527A42CE30015571E /* GalleryView.swift */,
+				AC186E7327A49CCC009E65DF /* GalleryViewModel.swift */,
+				ACD8BADD27A42CFB0015571E /* Networking.swift */,
+				ACD8BADF27A48CBC0015571E /* Post.swift */,
 				ACD8BAB727A42CE80015571E /* Assets.xcassets */,
 				ACD8BAB927A42CE80015571E /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD8BAB627A42CE30015571E /* ContentView.swift in Sources */,
+				ACD8BADE27A42CFB0015571E /* Networking.swift in Sources */,
+				AC186E7427A49CCC009E65DF /* GalleryViewModel.swift in Sources */,
+				ACD8BAB627A42CE30015571E /* GalleryView.swift in Sources */,
 				ACD8BAB427A42CE30015571E /* DanbooruApp.swift in Sources */,
+				ACD8BAE027A48CBC0015571E /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

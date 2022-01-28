@@ -11,7 +11,7 @@ import SwiftUI
 struct DanbooruApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GalleryView(viewModel: GalleryView.GalleryViewModel())
         }
     }
 }
